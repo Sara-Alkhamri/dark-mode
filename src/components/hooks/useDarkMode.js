@@ -1,4 +1,5 @@
 import useLocalStorage from './useLocalStorage';
+import { useEffect } from 'react';
 
 const useDarkMode = (initialValue) => {
    
@@ -15,6 +16,6 @@ const useDarkMode = (initialValue) => {
     }, [darkMode]);
 
     return [darkMode, setDarkMode];
-}
+};
 
 export default useDarkMode;
